@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:aqua;
+}
+.outerContainer{
+    width:100%;
+    background: var(--main-color);
+    height:10rem;
+}
+.btn{
+    background-color: var(--main-color);
+}
+Button:hover{
+    background-color: black;
+    color:white;
+    border:2px solid white;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.upperContainer{
+    width:30rem;
+    height:7rem;
+    position:absolute;
+    top:-2rem;
+    border: 2px solid black;
+    background-color: white;
+}
+.upperContainer h3{
+    width:100%;
+    margin:0.5rem;
+}
+.input_button{
+    display: flex;
+    justify-content: space-evenly;
+    gap:0.5rem;
+    outline: none;
+}
+ input{
+    width:20rem;
+    border-radius: 0.2rem;
+    padding:0.3rem;
+    font-size: 1.3rem;
+}
+ button{
+    padding:0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.2rem;
+}
+.edit_delete{
+    margin:10rem;
+    border:2px solid grey;
+    width:30rem;
+}
+.edit_box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.5rem;
+    margin:0.5rem 0rem;
+}
+.editbtn{
+    background-color: white;
+    border:2px solid var(--main-color);
+    color:var(--main-color);
+    margin:0.2rem;
+}
+.icon{
+    height:4px;
+    border:2px solid black;
+    margin-left: 2px;
+}
+.todos{
+    display:flex;
+    padding:1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+.inputEdit{
+border: none;
+display: inline-block;
+}
+.buttnflex{
+    display: flex;
+}
+.delbtn{
+background-color:var(--main-color) ;
+color:black;
+/* width:2rem; */
+display: flex;
+justify-content: center;
+align-items: center;
+width:1rem;
+}
+.taskheading{
+width:100%;
+border-bottom: 1px solid grey;
+}
+@media (max-width:450px){
+    .upperContainer{
+        width:22rem;
+    }  
+    input{
+        width:13rem;
+    } 
+    button{
+        padding:0.25rem 1rem;
+    }
+    .edit_delete{
+        width:22rem;
+    }
+}
